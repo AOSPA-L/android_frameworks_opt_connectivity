@@ -1645,7 +1645,6 @@ public class QcConnectivityService extends ConnectivityService {
      * desired
      * @return {@code true} on success, {@code false} on failure
      */
-    @Override
     public boolean requestRouteToHostAddress(int networkType, byte[] hostAddress) {
         enforceChangePermission();
         if (mProtectedNetworks.contains(networkType)) {
